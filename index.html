@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Personalized Recipe Planner{% endblock %}
+
+{% block content %}
+    <h1>Your personal recipe adventure starts here!</h1>
+
+    <h2>Make every recipe truly yours — edit and save with ease!</h2>
+
+    <form action="{{ url_for('index') }}" method="post">
+        <p id="4">Enter Your Name:</p>
+        <p><input type="text" name="name" required></p>
+
+        <p><input type="submit" value="Next"></p>
+    </form>
+{% endblock %}
